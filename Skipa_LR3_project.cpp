@@ -3,9 +3,10 @@
 
 using namespace std;
 
-void FirstSymbol()
+void FirstSymbol(char& ch1)
 {
-    // ввести первый символ ch1 
+    cout << "Введите первый символ: ";
+    cin >> ch1;
 }
 
 void SecondSymbol()
