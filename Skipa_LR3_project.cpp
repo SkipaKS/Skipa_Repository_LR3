@@ -15,10 +15,10 @@ void SecondSymbol()
 
 void printASCIICodes()
 {
-
+ // вывести каждый символ и его код ASCII 
 }
 
 void ptintSumASCIICodes()
 {
-
+ // вывести сумму кодов ASCII символов ch1 и ch2
 }
