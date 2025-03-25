@@ -29,14 +29,3 @@ void ptintSumASCIICodes(char ch1, char ch2)
     int sum_ascii = ascii_ch1 + ascii_ch2;
     cout << "Сумма кодов ASCII символов ch1 и ch2: " << sum_ascii << endl;
 }
-
-int main() {
-    char ch1, ch2;
-
-    FirstSymbol(ch1);
-    SecondSymbol(ch2);
-    printASCIICodes(ch1, ch2);
-    printSumASCIICodes(ch1, ch2);
-
-    return 0;
-}
