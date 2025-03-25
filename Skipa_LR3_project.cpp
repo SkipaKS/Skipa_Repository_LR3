@@ -9,17 +9,34 @@ void FirstSymbol(char& ch1)
     cin >> ch1;
 }
 
-void SecondSymbol()
+void SecondSymbol(char& ch2)
 {
-    // ввести второй символ ch2 
+    cout << "Введите второй символ: ";
+    cin >> ch2;
 }
 
-void printASCIICodes()
+void printASCIICodes(char ch1, char ch2)
 {
- // вывести каждый символ и его код ASCII 
+    cout << "Коды ASCII символов:" << endl;
+    cout << "Первый символ (ch1): " << static_cast<int>(ch1) << endl;
+    cout << "Второй символ (ch2): " << static_cast<int>(ch2) << endl;
 }
 
-void ptintSumASCIICodes()
+void ptintSumASCIICodes(char ch1, char ch2)
 {
- // вывести сумму кодов ASCII символов ch1 и ch2
+    int ascii_ch1 = static_cast<int>(ch1);
+    int ascii_ch2 = static_cast<int>(ch2);
+    int sum_ascii = ascii_ch1 + ascii_ch2;
+    cout << "Сумма кодов ASCII символов ch1 и ch2: " << sum_ascii << endl;
+}
+
+int main() {
+    char ch1, ch2;
+
+    FirstSymbol(ch1);
+    SecondSymbol(ch2);
+    printASCIICodes(ch1, ch2);
+    printSumASCIICodes(ch1, ch2);
+
+    return 0;
 }
